@@ -151,15 +151,12 @@
 
 	<script>
 
-		document.getElementById("year").textContent = new Date().getFullYear();
-
-		// Form submission (mock)
+			document.getElementById("year").textContent = new Date().getFullYear();
 		const contactForm = document.getElementById("contactForm");
 		const formMessage = document.getElementById("formMessage");
 
 		contactForm.addEventListener("submit", function (e) {
 			e.preventDefault();
-			// Here you can integrate API or email sending
 			formMessage.classList.remove("hidden");
 			contactForm.reset();
 		});

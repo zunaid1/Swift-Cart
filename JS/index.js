@@ -29,7 +29,6 @@ const DisplayData = (data) => {
 	productContainer.innerHTML = "";
 	const copiedData = [...data];
 
-	// Step 2: Sort products by rating (high to low)
 	copiedData.sort(function (a, b) {
 		return b.rating.rate - a.rating.rate;
 	});
