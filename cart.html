@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cart Products</title>
+
+
+	<!-- font-awsome  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Tailwind + Daisy Khala  -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-gray-800 p-6">
+
+	<div class="flex items-center justify-between">
+		<a class="btn btn-ghost text-xl text-white font-bold" href="index.html"><i class="fa-solid fa-house"></i></a>
+		<h1 class="text-3xl font-bold mb-6 text-center text-white"><i class="fa-solid fa-cart-arrow-down"></i> Cart
+			Products
+		</h1>
+		<a class="btn btn-ghost text-xl text-white font-bold" href="index.html"><i
+				class="fa-solid fa-circle-left"></i></a>
+
+	</div>
+
+
+
+	<div class="overflow-x-auto">
+		<table class="min-w-full bg-white rounded-lg shadow">
+			<thead>
+				<tr class="bg-gray-300 text-gray-700">
+					<th class="py-3 px-4 text-left">Product</th>
+					<th class="py-3 px-4 text-left">Price</th>
+					<th class="py-3 px-4 text-left">Quantity</th>
+					<th class="py-3 px-4 text-left">Total</th>
+					<th class="py-3 px-4 text-left">Actions</th>
+				</tr>
+			</thead>
+
+
+			<tbody id="cart-table">
+				<!-- Cart products will be injected here -->
+			</tbody>
+		</table>
+	</div>
+
+	<div class="mt-6 text-right text-xl font-bold text-white">
+		Total: $<span id="cart-total">0</span>
+	</div>
+
+	<script src="./cart.js"></script>
+</body>
+
+</html>
